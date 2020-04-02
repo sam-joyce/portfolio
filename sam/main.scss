@@ -121,6 +121,7 @@ $base-margin: 8px;
   color: $black;
   position: relative;
   padding: 0.8rem;
+  padding-top: 120px;
 
   &::after {
     content: "";
@@ -345,7 +346,7 @@ h1 {
 #wrapper {
   height: 800px;
   width: 100vw;
-  margin-bottom: 50px;
+  margin: 50px 0;
   // margin-left: 75px;
   position: relative; /* SO I CAN USE ABSOLUTE LATER */
   display: grid;
@@ -364,7 +365,7 @@ h1 {
       height: 100%;
       background-color: $white;
       opacity: 1;
-      color: $accent;
+      color: $white;
     }
     &::hover {
       opacity: 0.3;
@@ -374,26 +375,12 @@ h1 {
 
     #p1 {
       grid-area: p1;
-
-      div {
-        background-image: url(./images/rockpaperscrissors.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        text-align: center;
-      }
     }
     #p2 {
       grid-area: p2;
     }
     #p3 {
       grid-area: p3;
-
-      div {
-        background-image: url(./images/minesweeper.png);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        text-align: center;
-      }
     }
     #p4 {
       grid-area: p4;
@@ -403,25 +390,28 @@ h1 {
     }
     #p6 {
       grid-area: p6;
+    }
 
-      div {
-        background-image: url(./images/tic-tac-toe.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        text-align: center;
-      }
+    .project-boxes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      text-align: center;
     }
 }
 
 .fa-file-code {
   font-size: 36px;
   padding: 10px;
-  color: $black;
+  color: $white;
 }
 .fa-chrome {
   font-size: 36px;
   padding: 10px;
-  color: $black;
+  color: $white;
 }
 
 @media only screen and (min-width: 600px) {
@@ -536,6 +526,18 @@ h1 {
   }
 }
 
+.email-link {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  .fa-envelope {
+    font-size: 42px;
+    margin-right: 70px;
+  }
+}
+
+
 footer {
   width: 100vw;
   height: 60px;
@@ -567,3 +569,20 @@ footer {
   }
 }
 
+// CV Page styling
+
+#cv-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #cv {
+    width: 40vw;
+    height: 90vh;
+    border: 2px solid red;
+    z-index: 4;
+  }
+}

@@ -140,6 +140,7 @@
   color: black;
   position: relative;
   padding: 0.8rem;
+  padding-top: 120px;
 }
 
 #about-me::after {
@@ -415,7 +416,7 @@ h1 {
 #wrapper {
   height: 800px;
   width: 100vw;
-  margin-bottom: 50px;
+  margin: 50px 0;
   position: relative;
   /* SO I CAN USE ABSOLUTE LATER */
   display: -ms-grid;
@@ -431,7 +432,7 @@ h1 {
   height: 100%;
   background-color: white;
   opacity: 1;
-  color: #009b72;
+  color: white;
 }
 
 #wrapper::hover {
@@ -446,13 +447,6 @@ h1 {
   grid-area: p1;
 }
 
-#wrapper #p1 div {
-  background-image: url(./images/rockpaperscrissors.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
 #wrapper #p2 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -463,13 +457,6 @@ h1 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: p3;
-}
-
-#wrapper #p3 div {
-  background-image: url(./images/minesweeper.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  text-align: center;
 }
 
 #wrapper #p4 {
@@ -490,8 +477,17 @@ h1 {
   grid-area: p6;
 }
 
-#wrapper #p6 div {
-  background-image: url(./images/tic-tac-toe.jpg);
+#wrapper .project-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
   background-size: 100%;
   background-repeat: no-repeat;
   text-align: center;
@@ -500,13 +496,13 @@ h1 {
 .fa-file-code {
   font-size: 36px;
   padding: 10px;
-  color: black;
+  color: white;
 }
 
 .fa-chrome {
   font-size: 36px;
   padding: 10px;
-  color: black;
+  color: white;
 }
 
 @media only screen and (min-width: 600px) {
@@ -630,6 +626,21 @@ h1 {
   padding-bottom: 50px;
 }
 
+.email-link {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.email-link .fa-envelope {
+  font-size: 42px;
+  margin-right: 70px;
+}
+
 footer {
   width: 100vw;
   height: 60px;
@@ -673,5 +684,27 @@ footer .socials i:hover {
           transform: translateY(-10px);
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+
+#cv-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cv-container #cv {
+  width: 40vw;
+  height: 90vh;
+  border: 2px solid red;
+  z-index: 4;
 }
 /*# sourceMappingURL=main.css.map */

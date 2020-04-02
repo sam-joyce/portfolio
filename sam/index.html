@@ -15,7 +15,7 @@
   <section class="page1">
     <div class="intro">
       <h1>Hi. I'm <span class="name">Sam Joyce</span>, a software developer in London.</h1>
-      <p>scroll down to see my background and projects, or click <span class="cv">here</span> to see my cv</p>
+      <p>scroll down to see my background and projects, or click <span class="cv"><a href="cv.html">here</a></span> to see my cv</p>
     </div>
     <div class="arrow">
       <span></span>
@@ -39,16 +39,16 @@
           <a class="nav-link" href="#about-me">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">My Skills</a>
+          <a class="nav-link" href="#skills-section">My Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Project</a>
+          <a class="nav-link" href="#wrapper">Project</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Youtube</a>
+          <a class="nav-link" href="#YT">Youtube</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#call-me">Contact</a>
         </li>
       </ul>
     </div>
@@ -93,7 +93,7 @@
   <!-- MY SKILLS -->
   <div class="inner">
     <div class="header">
-      <h1>My Skills</h1>
+      <h1 id="skills-section">My Skills</h1>
     </div>
     <div class="container">
       <div class="skill-box">
@@ -112,7 +112,7 @@
           </div>
           <h3>CSS</h3>
         </div>
-        <p>Correctly structured HTML allows me to target multiple pieces of code with one selector, reducing the number of lines of code and therefore making load times faster.</p>
+        <p>Correctly structured HTML allows me to target multiple pieces of code with one selector. Using sass has also nabled ested and helped me avoid duplication in my applications' styling.</p>
       </div>
       <div class="skill-box">
         <div class="skill-title">
@@ -126,9 +126,9 @@
       <div class="skill-box">
         <div class="skill-title">
           <div class="img">
-            <img src="./images/sass.png" alt="SaaS Icon" class="skill-icon">
+            <img src="./images/Angular.png" alt="SaaS Icon" class="skill-icon">
           </div>
-          <h3>SaaS</h3>
+          <h3>Angular</h3>
         </div>
         <p>I will fill this in when I understand it, I will fill this in when I understand it, I will fill this in when I understand it.</p>
       </div>
@@ -148,7 +148,7 @@
           </div>
           <h3>Node JS</h3>
         </div>
-        <p>I will fill this in when I understand it, I will fill this in when I understand it, I will fill this in when I understand it.</p>
+        <p>I have gained an understanding of the server side, using Node.js to build an api to route and get data which is then dispalyed on the front-end.</p>
       </div>
     </div>
   </div>
@@ -158,7 +158,7 @@
       <h1>Projects</h1>
     </div>
 
-    <nav>
+    <!-- <nav>
       <div>
         <ul id="project-nav">
           <a href="*">All</a>
@@ -167,38 +167,46 @@
           <a href="*">React-JS</a>
         </ul>
       </div>
-    </nav>
+    </nav> -->
 
     <div id="wrapper">
       <article id="p1">
-        <div>
+        <div class=project-boxes>
             <a href="https://github.com/sam-joyce/rock-paper-scissors"><i class="far fa-file-code"></i></a>
             <a href="https://sam-joyce.github.io/rock-paper-scissors/"><i class="fab fa-chrome"></i></a>
-        </div>
+        </div class=project-boxes>
       </article>
       <article id="p2">
-        <div>
-          <p>Personal Project</p>
+        <div class=project-boxes>
+          <h3>Personal Project</h3>
+          <a href="*"><i class="far fa-file-code"></i></a>
+          <a href="*"><i class="fab fa-chrome"></i></a>
         </div>
       </article>
       <article id="p3">
-        <div>
+        <div class=project-boxes>
+          <h3>Minesweeper</h3>
           <a href="https://github.com/sam-joyce/minesweeper"><i class="far fa-file-code"></i></a>
           <a href="https://sam-joyce.github.io/minesweeper/"><i class="fab fa-chrome"></i></a>
         </div>
       </article>
       <article id="p4">
-        <div>
-          <p>Photo 4 will go here</p>
+        <div class=project-boxes>
+          <h3>NASA API</h3>
+          <a href="*"><i class="far fa-file-code"></i></a>
+          <a href="*"><i class="fab fa-chrome"></i></a>
         </div>
       </article>
       <article id="p5">
-        <div class="box5">
-          <div class="overlay">The Drop</div>
+        <div class=project-boxes class="box5">
+          <h3>The Drop</h3>
+          <a href="*"><i class="far fa-file-code"></i></a>
+          <a href="*"><i class="fab fa-chrome"></i></a>
         </div>
       </article>
       <article id="p6">
-        <div>
+        <div class=project-boxes>
+          <h3>Rock. Paper. Scissors</h3>
           <a href="https://github.com/sam-joyce/rock-paper-scissors"><i class="far fa-file-code"></i></a>
           <a href="https://sam-joyce.github.io/rock-paper-scissors/"><i class="fab fa-chrome"></i></a>
         </div>
@@ -207,7 +215,7 @@
 
   </section>
 
-  <section class="youtube">
+  <section class="youtube" id="YT">
     <div class="YT-title">
       <h1>YouTube</h1>
     </div>
@@ -237,21 +245,24 @@
 
   </section>
 
-  <section class="contact">
+  <section class="contact" id="call-me">
     <div class="contact-title">
       <h1>Contact</h1>
     </div>
 
     <h4>Have a question?</h4>
+    <div class="email-link">
+      <a href="mailto:samjoyce18@yahoo.com"><i class="far fa-envelope"></i></a>
+    </div>
 
-    <form action="https://webhook.site/d8dd0323-29bc-4d68-a3fd-69ce9e76fe17" class="form-cont">
+    <!-- <form action="https://webhook.site/d8dd0323-29bc-4d68-a3fd-69ce9e76fe17" class="form-cont">
       <section class="details">
         <input type="text" name="name" id="" placeholder="Name" required>
         <input type="email" name="email" id="" placeholder="Enter Email" required>
         <input type="text" name="message" id="message" placeholder="Your Message" required>
         <button class="submit" type="submit">Submit</button>
       </section>
-    </form>
+    </form> -->
 
   </section>
 
