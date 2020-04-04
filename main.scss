@@ -462,8 +462,17 @@ h1 {
   margin-top: 30px;
 
   .item {
-    border: 2px solid black;
+    // border: 2px solid red;
     margin: auto 0;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+
+    .fa-youtube {
+      font-size: 60px;
+      color: red;
+      margin: 40px 0;
+    }
   }
 }
 
@@ -475,7 +484,7 @@ h1 {
   padding: 40px;
 
   h4 {
-    color: $accent;
+    color: $white;
     text-align: center;
     padding: 30px;
   }
@@ -556,7 +565,6 @@ footer {
     margin: 0 auto;
 
     i {
-      color: $white;
       font-size: 32px;
       margin: 15px auto;
 
@@ -566,23 +574,5 @@ footer {
         transition: 0.4s ease;
       }
     }
-  }
-}
-
-// CV Page styling
-
-#cv-container {
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  #cv {
-    width: 40vw;
-    height: 90vh;
-    border: 2px solid red;
-    z-index: 4;
   }
 }
