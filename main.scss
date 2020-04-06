@@ -570,6 +570,7 @@ footer {
 
       &:hover {
         color: $accent;
+        text-decoration: none;
         transform: translateY(-10px);
         transition: 0.4s ease;
       }
