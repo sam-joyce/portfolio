@@ -34,6 +34,8 @@ $base-margin: 8px;
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
+  color: white !important;
+  text-decoration: none !important;
   transition: all 0.4s ease 0s;
 
   &:hover {
