@@ -23,15 +23,15 @@ $base-margin: 8px;
 }
 
 .intro {
-  // width: 50%;
   display: inline-block;
   margin-top: 30%;
   color: $white;
   line-height: 40px;
 }
 
-.name {
-  color: $accent;
+.seperator {
+  color: $accent !important;
+  font-weight: bold;
 }
 
 .cv {
@@ -149,7 +149,6 @@ $base-margin: 8px;
   align-items: center;
   align-items: center;
   width: 100%;
-  // height: 500px;
   padding-bottom: 50px;
 }
 
@@ -186,6 +185,7 @@ $base-margin: 8px;
 
   #about-me {
     font-size: 0.75em;
+    padding-top: 50px;
   }
 }
 
@@ -352,85 +352,76 @@ h1 {
 }
 
 #wrapper {
-  height: 800px;
-  width: 100vw;
-  margin: 50px 0;
-  // margin-left: 75px;
+  width: 90vw;
+  margin: 50px auto;
   position: relative; /* SO I CAN USE ABSOLUTE LATER */
   display: grid;
-  grid-template-areas: 
-    "p1"
-    "p2"
-    "p3"
-    "p4"
-    "p5"
-    "p6";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
 
     article {
-      border: 2px solid $black;
-    }
-    div {
-      height: 100%;
-      background-color: $white;
-      opacity: 1;
-      color: $white;
-    }
-    &::hover {
-      opacity: 0.3;
-      cursor: pointer;
-      padding: $base-margin * 2;
-    }
-
-    #p1 {
-      grid-area: p1;
-    }
-    #p2 {
-      grid-area: p2;
-    }
-    #p3 {
-      grid-area: p3;
-    }
-    #p4 {
-      grid-area: p4;
-    }
-    #p5 {
-      grid-area: p5;
-    }
-    #p6 {
-      grid-area: p6;
-    }
-
-    .project-boxes {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: black;;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      text-align: center;
+      border: 1px solid rgb(245, 245, 245);
+      border-radius: 10px;
+
+      div {
+        height: 90%;
+        width: 90%;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+
+        &:hover {
+          background-color: $accent;
+          color: $white;
+
+          a {
+            color: $white;
+
+            i {
+              color: $white;
+            }
+          }
+        }
+
+        h3 {
+          font-weight: bold;
+        }
+
+        p {
+          color: $white;
+        }
+
+
+      }
     }
-}
+  }
 
 .fa-file-code {
   font-size: 36px;
   padding: 10px;
-  color: $white;
+  color: $black;
 }
 .fa-chrome {
   font-size: 36px;
   padding: 10px;
-  color: $white;
+  color: $black;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 990px) {
   #wrapper {
-    grid-template-columns: 2fr 2fr 3fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "p2 p2 p3 p4"
-    "p2 p2 p5 p5"
-    "p1 p6 p5 p5";
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
   }
 }
 
@@ -438,6 +429,12 @@ h1 {
 
 .youtube {
   color: $black;
+}
+
+#YT-intro {
+  padding-top: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .YT-title {
