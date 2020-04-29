@@ -14,7 +14,6 @@
 }
 
 .intro {
-  width: 50%;
   display: inline-block;
   margin-top: 30%;
   color: white;
@@ -33,7 +32,11 @@
   transition: all 0.4s ease 0s;
 }
 
-.cv:hover {
+.cv a {
+  color: white !important;
+}
+
+.cv a:hover {
   color: #009b72;
 }
 
@@ -611,7 +614,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #dad0d0;
+  color: #dad0d0 !important;
   margin: 0 auto;
 }
 
@@ -647,11 +650,15 @@ h1 {
 .email-link .fa-envelope {
   font-size: 42px;
   margin-right: 70px;
+  color: white !important;
+}
+
+.email-link .fa-envelope:hover {
+  color: #009b72 !important;
 }
 
 footer {
   width: 100vw;
-  height: 60px;
   background-color: #3f4545;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -680,6 +687,10 @@ footer .socials {
   margin: 0 auto;
 }
 
+footer .socials a {
+  color: white !important;
+}
+
 footer .socials i {
   font-size: 32px;
   margin: 15px auto;
@@ -687,6 +698,7 @@ footer .socials i {
 
 footer .socials i:hover {
   color: #009b72;
+  text-decoration: none;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
   -webkit-transition: 0.4s ease;
