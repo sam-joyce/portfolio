@@ -536,7 +536,7 @@ h1 {
 
 .box-around {
   width: 100vw;
-  height: 600px;
+  height: 650px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40% 40%;
@@ -691,9 +691,5 @@ footer .socials i {
 footer .socials i:hover {
   color: #009b72;
   text-decoration: none;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
 }
 /*# sourceMappingURL=main.css.map */
